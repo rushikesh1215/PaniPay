@@ -1,0 +1,22 @@
+# Root-level ignore
+**/.idea/
+**/.vscode/
+**/node_modules/
+**/.settings/            # Eclipse/STS settings
+**/.classpath
+**/.project
+**/.npm/
+
+# --- Build Artifacts ---
+**/target/              # Catches Spring Boot build folder
+**/build/               # Catches React/Gradle build folders
+**/dist/                # Catches Vite/Vue/modern JS build folders
+**/out/   
+**/*.class              # Catches IntelliJ/Java compiler output
+# --- Docker & Secrets ---
+**/.env*                # The main file docker-compose uses
+           
+# H2 Database files
+**/data/
+*.mv.db
+*.trace.db
